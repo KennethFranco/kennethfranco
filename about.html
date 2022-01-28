@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ken</title>
+    <link rel="shortcut icon" href="avatar.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <script>
+        AOS.init();
+    </script>
+    <nav class = "container navbar navbar-expand-md navbar-dark">
+        <a href="index.html" class = "universalSubheader" style = "color:#04f06a; text-decoration: none;">Ken</a>
+        <button
+            class = "navbar-toggler"
+            type = "button"
+            data-bs-toggle = "collapse"
+            data-bs-target = "#toggleMobileMenu"
+            aria-controls = "toggleMobileMenu"
+            aria-expanded = "false"
+            aria-lable = "Toggle navigation"
+        >
+        <span class = "navbar-toggler-icon"></span>    
+        </button>
+        
+        <div class = "collapse navbar-collapse" id = "toggleMobileMenu">
+            <ul class = "navbar-nav ms-auto">
+                <li>
+                    <a class = "nav-link universalBody" href = "about.html">About</a>
+                </li>
+                <li>
+                    <a class = "nav-link universalBody" href = "index.html#projects">Works</a>
+                </li>
+                <li>
+                    <a class = "nav-link universalBody" href = "#footer">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container-mt-5">
+        <div class="container mt-5 mb-2">
+            <h4 class="universalSubheader mb-5" data-aos="fade-up">&lt;me&gt;</h4>
+            <div class="row">
+                <div class="col-lg sm-12" style="text-align: center;" data-aos="flip-right" data-aos-duration="1250">
+                    <img src="new.png" style="max-width: 65%">
+                </div>
+                <div class="col" style="text-align: justify" data-aos="fade-left">
+                    <h1 class="universalHeaderSpecial1 universalHeaderSpecial2">Hi there!</h1>
+                    <h1 class="universalHeaderSpecial1 mb-5" style="color: #04f06a">I'm Kenneth Laurenz Franco.</h1>
+                    <p class="universalBody mb-5" style="text-align: left">
+                        I am currently a junior majoring in <span style = "color: #04f06a">BS Management Information Systems (MIS)</span> at the Ateneo de Manila University, specializing in <span style = "color: #04f06a">Data Science and Analytics</span> as well as <span style = "color: #04f06a">Enterprise Systems</span>.
+                        <br>
+                        <br>
+                        I began my journey into the professional setting of development by interning at <span style = "color: #04f06a" >Abakada Studios</span> as a <span style = "color: #04f06a">Web Development Intern</span>. Moving forward, I hope to be able to gain more experience in developer work, and to pursue internships to immerse myself in a more professional setting.
+                    </p>
+                    <div class="row univrsalButtonSpecial">
+                        <a href="/francoResume.pdf" target="_blank" rel="noopener noreferrer">
+                            <button class="universalButton">Download Resume!</button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <h4 class="universalSubheader mt-5" data-aos="fade-up">&lt;/me&gt;</h4>
+        </div>
+
+        <div class="container mt-5" data-aos="fade-up">
+            <h4 class="universalSubheader mb-5" data-aos="fade-up">&lt;experience&gt;</h4>
+            <div class="row">
+                <div id="mobileTabs" class="col-12 mb-4" style="text-align: center;">
+                    <ul style="display: inline; padding-left: 0px;">
+                        <li onclick="showFirst()" id="tabItemSmall1" class="mobileTab universalHeader">abkd</li>
+                        <li onclick="showSecond()" id="tabItemSmall2" class="mobileTab universalHeader">MISA</li>
+                        <li onclick="showThird()" id="tabItemSmall3" class="mobileTabSpecial universalHeader">JFeL</li>
+                    </ul>
+                </div>
+                <div id="normalTabs" class="col-lg">
+                    <ul id="tabs" style="list-style-type: none; padding: 0">
+                        <li onclick="showFirst()" id="tabItem1" class="normalTab universalHeader">abkd</li>
+                        <li onclick="showSecond()" id="tabItem2" class="normalTab universalHeader">MISA</li>
+                        <li onclick="showThird()" id="tabItem3" class="normalTab universalHeader">JFeL</li>
+                    </ul>
+
+                </div>
+                <div class="col">
+                    <h1 id="initialExp" class="universalBody" style="display: block;">Click on any of the names on the
+                        left to know more about my own journey in <span style="color: #04f06a">companies</span> and
+                        <span style="color: #04f06a">school organizations</span>!</h1>
+                    <div class="animate__animated animate__fadeIn" id="firstCompany" style="display: none;">
+                        <div class="row">
+                            <h1 class="mb-5 universalTitle" style="color: white;">
+                                <a href="https://www.abakadastudios.com/" target="_blank" rel="noopener noreferrer"
+                                    style="text-decoration: none; color: #04f06a">
+                                    @Abakada Studios
+                                </a>
+                                </span>
+                                <span style="color: #04f06a">
+
+                            </h1>
+                            <h1 class="universalTitle">Web Development Intern</h1>
+
+                        </div>
+                        <div class="row">
+                            <p class="mt-3 mb-5">
+                                <span class="projectTag">
+                                    Oct 2021 - Present
+                                </span>
+                            </p>
+                        </div>
+                        <ul>
+                            <li class="universalBody">Employed in a team of developers that have been and are currently assigned to working on a Full-Stack Enrollment and Admission System for one of the company's clients.</li>
+                            <li class="universalBody">Develops responsive frontend pages with data validation through HTML, CSS, and Bootstrap that are also tied into the system's backend.</li>
+                            <li class="universalBody">Configures the system's many backend functionalities mainly involving many different doctype CRUD operations and other features, through the use of Javascript, jQuery, and ERPNext's own built-in capabilities.</li>
+                            <li class = "universalBody">Works in a fast-paced setting under the Agile Methodology.</li>
+                        </ul>
+                    </div>
+                    <div class="animate__animated animate__fadeIn" id="secondCompany" style="display: none;">
+                        <div class="row">
+                            <h1 class="mb-5 universalTitle" style="color: white;">
+                                <a href="https://www.facebook.com/Ateneo.MISA" target="_blank" rel="noopener noreferrer"
+                                    style="text-decoration: none; color: #04f06a">
+                                    @Ateneo Management Information Systems Association
+                                </a>
+                                </span>
+                                <span style="color: #04f06a">
+
+                            </h1>
+
+                        </div>
+                        <div class="row">
+                            <h1 class="universalTitle">Associate Vice President for Systems Documentation</h1>
+                            <p class="mt-3 mb-5">
+                                <span class="projectTag">
+                                    Jul 2021 - Present
+                                </span>
+                            </p>
+                        </div>
+                        <ul>
+                            <li class="universalBody">Manages the Git account of the eServices cluster.</li>
+                            <li class="universalBody">Spearheads all documentation for both user and system of all eServices Projects.</li>
+                            <li class="universalBody">Ensures that technical terms are understandable for users of cluster products and projects.</li>
+                            <li class = "universalBody">Trains Systems Documentation officers under the sub-cluster in Git and systems documentation procedures.</li>
+                        </ul>
+                        <div class="row mt-5">
+                            <h1 class="universalTitle">Systems Documentation Officer</h1>
+                            <p class="mt-3 mb-5">
+                                <span class="projectTag">
+                                    Sep 2020 - May 2021
+                                </span>
+                            </p>
+                        </div>
+                        <ul>
+                            <li class="universalBody">Learned about version control systems and put this into action through utilizing GitLab's functions in creating and managing repositories for website development.</li>
+                            <li class="universalBody">Practiced and honed HTML/CSS skills with the guidance of the eServices cluster.</li>
+                        </ul>
+                        <div class="row mt-5">
+                            <h1 class="universalTitle">Frontend Web Developer, IM Summit 2021: Exceed</h1>
+                            <p class="mt-3 mb-5">
+                                <span class="projectTag">
+                                    Feb 2021
+                                </span>
+                            </p>
+                        </div>
+                        <ul>
+                            <li class="universalBody">Worked in a team composed of four developers who collaborated and were guided by the eServices cluster of MISA to develop a website for the organization's flagship event: IM Summit 2021: Exceed.</li>
+                            <li class="universalBody">Utilized HTML, CSS, and Vue.js to create the Mechanics page for the dedicated website of the event.</li>
+                        </ul>
+                        <div class="row mt-5">
+                            <h1 class="universalTitle">Programs Head, Jumpstart 2020: Voyager</h1>
+                            <p class="mt-3 mb-5">
+                                <span class="projectTag">
+                                    Aug 2020 - Sep 2020
+                                </span>
+                            </p>
+                        </div>
+                        <ul>
+                            <li class="universalBody"> Spearheaded the end-to-end program flow of Day 1 of the event. This day specifically composed of a Webinar wherein incoming MIS freshmen were welcomed to and taught about ADMU's BS MIS program.</li>
+                            <li class="universalBody">Handled and organized all communication lines between the core speakers and participants of the event.</li>
+                            <li class="universalBody">Managed the schedule and flow of the program on the day itself and ensured program was being followed properly and was flowing smoothly.</li>
+                        </ul>
+                    </div>
+                    <div class="animate__animated animate__fadeIn" id="thirdCompany" style="display: none;">
+                        <div class="row">
+                            <h1 class="mb-5 universalTitle" style="color: white;">
+                                <a href="https://www.facebook.com/jfelonline" target="_blank" rel="noopener noreferrer"
+                                    style="text-decoration: none; color: #04f06a">
+                                    @Junior Fellowship for Financial Literacy
+                                </a>
+                                </span>
+                                <span style="color: #04f06a">
+
+                            </h1>
+                            <h1 class="universalTitle">Communications Associate</h1>
+
+                        </div>
+                        <div class="row">
+                            <p class="mt-3 mb-5">
+                                <span class="projectTag">
+                                    Aug 2021 - Present
+                                </span>
+                            </p>
+                        </div>
+                        <ul>
+                            <li class="universalBody">Helps in managing the various online platforms of the organization.</li>
+                            <li class="universalBody">Assists in the maintenance of the blast calendar with regards to post scheduling.</li>
+                            <li class="universalBody">Crafts the copy for social media posts (including spiels, captions and publication content).</li>
+                            <li class="universalBody">Aids the AVP for Communications in facilitating the collection of sponsor generated content.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h4 class="universalSubheader mt-5" data-aos="fade-down">&lt;/experience&gt;</h4>
+        </div>
+
+        <div class="container mt-5">
+            <h4 class="universalSubheader mb-5" data-aos="fade-up">&lt;interests&gt;</h4>
+            <div class="row" data-aos="fade-down">
+                <div class="col-lg">
+                    <div class="project" style="text-align: center;">
+                        <svg class="mb-5" style="text-align: center;" xmlns="http://www.w3.org/2000/svg" width="125px"
+                            height="125px" fill="currentColor" class="bi bi-steam" viewBox="0 0 16 16">
+                            <path fill="#04f06a"
+                                d="M.329 10.333A8.01 8.01 0 0 0 7.99 16C12.414 16 16 12.418 16 8s-3.586-8-8.009-8A8.006 8.006 0 0 0 0 7.468l.003.006 4.304 1.769A2.198 2.198 0 0 1 5.62 8.88l1.96-2.844-.001-.04a3.046 3.046 0 0 1 3.042-3.043 3.046 3.046 0 0 1 3.042 3.043 3.047 3.047 0 0 1-3.111 3.044l-2.804 2a2.223 2.223 0 0 1-3.075 2.11 2.217 2.217 0 0 1-1.312-1.568L.33 10.333Z" />
+                            <path fill="#04f06a"
+                                d="M4.868 12.683a1.715 1.715 0 0 0 1.318-3.165 1.705 1.705 0 0 0-1.263-.02l1.023.424a1.261 1.261 0 1 1-.97 2.33l-.99-.41a1.7 1.7 0 0 0 .882.84Zm3.726-6.687a2.03 2.03 0 0 0 2.027 2.029 2.03 2.03 0 0 0 2.027-2.029 2.03 2.03 0 0 0-2.027-2.027 2.03 2.03 0 0 0-2.027 2.027Zm2.03-1.527a1.524 1.524 0 1 1-.002 3.048 1.524 1.524 0 0 1 .002-3.048Z" />
+                        </svg>
+                        <h1 class="mb-5">gaming</h1>
+                        <p class="d-flex justify-content-center">
+                            <span class="projectTag">DOTA</span>
+                            <span class="projectTag">Apex</span>
+                            <span class="projectTag">Valorant</span>
+                        </p>
+                        <p class="universalBody mt-5">
+                            I enjoy playing online video games whenever the time permits with my friends. We're really competitive and I really think that rubs off on me a lot, even outside gaming.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="project" style="text-align: center;">
+                        <img class="mb-5" src="anime.png" style="width: 125px; height: 125px" />
+                        <h1 class="mb-5">weebing out</h1>
+                        <p class="d-flex justify-content-center">
+                            <span class="projectTag">Anime</span>
+                            <span class="projectTag">Manga</span>
+                            <span class="projectTag">LNs</span>
+                        </p>
+                        <p class="universalBody mt-5">
+                            I'm an avid fan of anything related to anime, keeping in touch with the current seasonals as well as binging mulitple series just to take a break once in a while.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <h4 class="universalSubheader mt-5" data-aos="fade-down">&lt;/interests&gt;</h4>
+        </div>
+
+        <div id = "footer" class="container mt-5" data-aos="fade-up">
+            <h4 class="universalSubheader mb-5">&lt;footer&gt;</h4>
+            <div class="row">
+                <div class="col-md-7 col-sm-12" style = "text-align: center;">
+                    <img src="avatar.png" alt="" style = "max-width: 35%;">
+
+                </div>
+                <div class="col footerIcons" style="text-align: center">
+                    <h1 class = "mb-5" style="text-align: center">Thanks for dropping by :> Feel free to contact me!</h1>
+                    <a href="https://www.linkedin.com/in/kenneth-laurenz-franco-162b94200/" target="_blank"
+                        rel="noopener noreferrer" style="text-decoration: none;">
+                        <svg style="margin-right: 35px;" width="100px" height="100px" xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                        </svg>
+                    </a>
+
+                    <a href="mailto:kennethlaurenzfranco@gmail.com" style="text-decoration: none;">
+                        <svg style="margin-right: 35px;" width="125px" height="125px" xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                        </svg>
+                    </a>
+
+                    <a href="https://github.com/KennethFranco" target="_blank" rel="noopener noreferrer"
+                        style="text-decoration: none;">
+                        <svg width="100px" height="100px" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                    </a>
+
+                </div>
+            </div>
+
+            <h4 class="universalSubheader mt-5">&lt;/footer&gt;</h4>
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+    <!-- <div class="container mt-5">
+        <div class = "row">
+            <h4 class = "universalSubheader mb-5">&lt;footer&gt;</h4>
+            <div class="col-md-7 col-sm-12">
+                <h1 style= "text-align: center">img</h1>
+            </div>
+
+            <div class="col footerIcons" style="text-align: center">
+                <div class = "row">
+                    <h1 class = "universalHeader" style= "text-align: center">contact me!</h1>
+     
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <a href="https://www.linkedin.com/in/kenneth-laurenz-franco-162b94200/" target="_blank" rel="noopener noreferrer">
+                            <svg style = "margin-right: 35px;" width = "100px" height = "100px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                              </svg>
+                        </a>   
+                    </div>
+                    <div class="col">
+                        <a href="mailto:kennethlaurenzfranco@gmail.com">
+                            <svg style = "margin-right: 35px;"  width = "125px" height = "125px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                              </svg>
+                          </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="https://github.com/KennethFranco" target="_blank" rel="noopener noreferrer">
+                            <svg width ="100px" height = "100px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16" style = "margin-right: 25px;">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                            </a>
+                    </div>
+                </div>
+
+
+    
+            </div>
+            <h4 class = "universalSubheader mt-5">&lt;/footer&gt;</h4>
+        </div> -->
+
+    </div>
+</body>
+
+</html>
