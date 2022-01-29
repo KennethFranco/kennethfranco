@@ -460,6 +460,10 @@ path:hover{
     }
 }
 @media screen and (max-width: 768px){
+    .footerIcon{
+        width: 65px;
+        height: 65px;
+    }
     .navbarOption > .navbarMobile{
         text-align: center;
     }
