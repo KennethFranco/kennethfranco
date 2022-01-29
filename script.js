@@ -1,15 +1,3 @@
-var i = 0;
-var txt = '<skills>'; /* The text */
-var speed = 25; /* The speed/duration of the effect in milliseconds */
-
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("demo").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-
-}
 
 function showFirst(){
   var initial = document.getElementById("initialExp");
@@ -23,27 +11,6 @@ function showFirst(){
 
   var z = document.getElementById("thirdCompany");
   z.style.display = "none";
-
-  // var current = document.getElementById("currentCompany");
-  // current.style.color =  "#04f06a";
-
-  // var other1 = document.getElementById("currentCompany2");
-  // other1.style.color =  "white";
-
-  // var other2 = document.getElementById("currentCompany3");
-  // other2.style.color =  "white";
-
-  // var currentTab = document.getElementById("tabItem1");
-  // currentTab.style.transition = "all 0.4s";
-  // currentTab.style.borderLeft = "3px solid #04f06a"
-
-  // var otherTab1 = document.getElementById("tabItem2");
-  // otherTab1.style.transition = "all 0.4s";
-  // otherTab1.style.borderLeft = "3px solid white";
-
-  // var otherTab2 = document.getElementById("tabItem3");
-  // otherTab2.style.transition = "all 0.4s";
-  // otherTab2.style.borderLeft = "3px solid white";
 
   var currentTab = document.getElementById("tabItem1");
   currentTab.style.transition = "all 0.4s";
@@ -144,27 +111,6 @@ function showThird(){
 
   var z = document.getElementById("firstCompany");
   z.style.display = "none";
-
-  // var current = document.getElementById("currentCompany3");
-  // current.style.color =  "#04f06a";
-
-  // var other1 = document.getElementById("currentCompany");
-  // other1.style.color =  "white";
-
-  // var other2 = document.getElementById("currentCompany2");
-  // other2.style.color =  "white";
-
-  // var currentTab = document.getElementById("tabItem3");
-  // currentTab.style.transition = "all 0.4s";
-  // currentTab.style.borderLeft = "3px solid #04f06a"
-
-  // var otherTab1 = document.getElementById("tabItem1");
-  // otherTab1.style.transition = "all 0.4s";
-  // otherTab1.style.borderLeft = "3px solid white";
-
-  // var otherTab2 = document.getElementById("tabItem2");
-  // otherTab2.style.transition = "all 0.4s";
-  // otherTab2.style.borderLeft = "3px solid white";
 
   var currentTab = document.getElementById("tabItem3");
   currentTab.style.transition = "all 0.4s";

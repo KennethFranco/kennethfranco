@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,472 +8,428 @@
     <title>ken</title>
     <link rel="shortcut icon" href="avatar.png">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
-<body onload = "typeWriter()">>
+
+<body>
     <script>
         AOS.init();
     </script>
-    <nav class = "container navbar navbar-expand-md navbar-dark">
-        <a href="" class = "universalSubheader" style = "color:#04f06a; text-decoration: none;">Ken</a>
-        <button
-            class = "navbar-toggler"
-            type = "button"
-            data-bs-toggle = "collapse"
-            data-bs-target = "#toggleMobileMenu"
-            aria-controls = "toggleMobileMenu"
-            aria-expanded = "false"
-            aria-lable = "Toggle navigation"
-        >
-        <span class = "navbar-toggler-icon"></span>    
+    <!-- NAVBAR -->
+    <nav class="container navbar navbar-expand-md navbar-dark mt-5">
+        <a href="" class="universalSubheader" style="color:#04f06a; text-decoration: none;">Ken</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu"
+            aria-controls="toggleMobileMenu" aria-expanded="false" aria-lable="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-        
-        <div class = "collapse navbar-collapse" id = "toggleMobileMenu">
-            <ul class = "navbar-nav ms-auto">
-                <li>
-                    <a class = "nav-link universalBody" href = "about.html">About</a>
+
+        <div class="collapse navbar-collapse" id="toggleMobileMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="navbarOption">
+                    <a class="nav-link universalBody navbarMobile" href="about.html">About</a>
                 </li>
-                <li>
-                    <a class = "nav-link universalBody" href = "#projects">Works</a>
+                <li class="navbarOption">
+                    <a class="nav-link universalBody navbarMobile" href="#projects">Works</a>
                 </li>
-                <li>
-                    <a class = "nav-link universalBody" href = "#footer">Contact</a>
+                <li class="navbarOption">
+                    <a class="nav-link universalBody navbarMobile" href="#footer">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav> -->
-
-      <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav> -->
-
-
-    <div class = "container mt-5">
-        <div class = "firstCard">
+    <!-- Content -->
+    <div class="container mt-5">
+        <div class="firstCard">
             <div class="row mb-5 d-flex justify-content-center">
-                <img class = "animate__animated animate__fadeInDown" src="avatar.png" style = "text-align: center; max-width: 25%;">
+                <img class="animate__animated animate__fadeInDown" src="avatar.png"
+                    style="text-align: center; max-width: 25%;">
             </div>
-            <div class = "row">
-                <h1 class = "universalHeader animate__animated animate__fadeInDown">Hi there! Nice to meet you!</h1>
+            <div class="row">
+                <h1 class="universalHeader animate__animated animate__fadeInDown">Hi there! Nice to meet you!</h1>
             </div>
             <div class="row mb-5">
-                <h1 class = "universalHeader animate__animated animate__pulse">I'm <span style ="color: #04f06a">Ken</span>.</h1>
+                <h1 class="universalHeader animate__animated animate__pulse">I'm <span
+                        style="color: #04f06a">Ken</span>.</h1>
             </div>
             <div class="row mb-2">
-                <h4 class = "universalBody animate__animated animate__fadeInDown">A tech geek who enjoys developing products and applications of great value.</h4>
+                <h4 class="universalBody animate__animated animate__fadeInDown">A tech geek who enjoys developing
+                    products and applications of great value.</h4>
             </div>
             <div class="row mb-5">
-                <p class=  "universalBody animate__animated animate__fadeInDown">I'm a <span style ="color: #04f06a">Philippines-based 3rd year Ateneo de Manila University (ADMU) student</span> and aspiring <span style ="color: #04f06a">Software Engineer</span>, eager to build meaningful experiences (mostly in the web) for people through the use of today's technology. </p>
+                <p class="universalBody animate__animated animate__fadeInDown">I'm a <span
+                        style="color: #04f06a">Philippines-based 3rd year Ateneo de Manila University (ADMU)
+                        student</span> and aspiring <span style="color: #04f06a">Software Engineer</span>, eager to
+                    build meaningful experiences (mostly in the web) for people through the use of today's technology.
+                </p>
             </div>
         </div>
 
-        <div data-aos="fade-up" class = "row" style  = "margin-top: 100px;">
-            <h4 class = "universalSubheader mb-5">&lt;skills&gt;</h4>
-            <div class = "row" data-aos="fade-down">
+        <!-- SKILLS -->
+        <div data-aos="fade-up" class="row" style="margin-top: 100px;">
+            <h4 class="universalSubheader mb-5">&lt;skills&gt;</h4>
+            <div class="row" data-aos="fade-down">
                 <div class="col-lg-12 col-xl-4 mb-3 animate__animated animate__zoomInLeft">
                     <div class="skill">
-                        <h1 class = "skillTitle p-3">HTML/CSS</h1>
-                        <ul class = "bodyText">
-                            <li class = "universalBody">Knowledgable about modern-day practices with regards to developing frontend designs.</li>
-                            <li class = "universalBody">Great amount of experience with these in developing websites for both student organizations and current place of employment.</li>
+                        <h1 class="skillTitle p-3">HTML/CSS</h1>
+                        <ul class="bodyText">
+                            <li class="universalBody">Knowledgable about modern-day practices with regards to developing
+                                frontend designs.</li>
+                            <li class="universalBody">Great amount of experience with these in developing websites for
+                                both student organizations and current place of employment.</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-12 col-xl-4 mb-3 animate__animated animate__zoomIn">
                     <div class="skill">
-                        <h1 class = "skillTitle p-3">Bootstrap</h1>
+                        <h1 class="skillTitle p-3">Bootstrap</h1>
                         <ul>
-                            <li class = "universalBody">Utilized in many of my projects and well equipped to use its many classes and functionalities in developing the frontend of websites.</li>
+                            <li class="universalBody">Utilized in many of my projects and well equipped to use its many
+                                classes and functionalities in developing the frontend of websites.</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-12 col-xl-4 mb-3 animate__animated animate__zoomInRight">
                     <div class="skill">
-                        <h1 class = "skillTitle p-3">Javascript<br>/jQuery</h1>
+                        <h1 class="skillTitle p-3">Javascript<br>/jQuery</h1>
                         <ul>
-                            <li class = "universalBody">Capable of utilizing both technologies in creating features and special behavior for both frontend and backend pages of websites.</li>
+                            <li class="universalBody">Capable of utilizing both technologies in creating features and
+                                special behavior for both frontend and backend pages of websites.</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div class = "row" data-aos="fade-down">
+            <div class="row" data-aos="fade-down">
                 <div class="col-lg-12 col-xl-4 mb-3 animate__animated animate__zoomInLeft">
                     <div class="skill">
-                        <h1 class = "skillTitle">Python</h1>
-                        <ul class = "bodyText">
-                            <li class = "universalBody">Primary programming language learned and utilized during my stay in ADMU, allowing me to get a very good grasp on the language and its use.</li>
-                            <li class = "universalBody">Also very familiar with OOP concepts in this language.</li>
+                        <h1 class="skillTitle">Python</h1>
+                        <ul class="bodyText">
+                            <li class="universalBody">Primary programming language learned and utilized during my stay
+                                in ADMU, allowing me to get a very good grasp on the language and its use.</li>
+                            <li class="universalBody">Also very familiar with OOP concepts in this language.</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-12 col-xl-4 mb-3 animate__animated animate__zoomInLeft">
                     <div class="skill">
-                        <h1 class = "skillTitle">Django</h1>
-                        <ul class = "bodyText">
-                            <li class = "universalBody">Built upon and expounded on my knowledge of Python through taking up a course on Django in my second year.</li>
-                            <li class = "universalBody">Successfully developed and deployed a full-stack website utilzing the framework for the final project of that said course.</li>
+                        <h1 class="skillTitle">Django</h1>
+                        <ul class="bodyText">
+                            <li class="universalBody">Built upon and expounded on my knowledge of Python through taking
+                                up a course on Django in my second year.</li>
+                            <li class="universalBody">Successfully developed and deployed a full-stack website utilzing
+                                the framework for the final project of that said course.</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-12 mb-3 col-xl-4 animate__animated animate__zoomIn">
                     <div class="skill">
-                        <h1 class = "skillTitle">Java</h1>
+                        <h1 class="skillTitle">Java</h1>
                         <ul>
-                            <li class = "universalBody">Another programming language that has been a focal point of my stay in ADMU, primarly concerning my electives.</li>
-                            <li class = "universalBody">Have effectively utilized this in developing Android applications as well as creating REST APIs utilizing it along with Spring Boot.</li>
+                            <li class="universalBody">Another programming language that has been a focal point of my
+                                stay in ADMU, primarly concerning my electives.</li>
+                            <li class="universalBody">Have effectively utilized this in developing Android applications
+                                as well as creating REST APIs utilizing it along with Spring Boot.</li>
                         </ul>
                     </div>
                 </div>
             </div>
-
-            
-            <div class = "row" data-aos="fade-down">
+            <div class="row" data-aos="fade-down">
                 <div class="col-lg-12 col-xl-4 mb-3 animate__animated animate__zoomInLeft">
                     <div class="skill">
-                        <h1 class = "skillTitle">Vue.js</h1>
-                        <ul class = "bodyText">
-                            <li class = "universalBody">Vast amount of experience with regards to developing with it as it is the most common technology stack used in the eServices cluster of my home organization.</li>
+                        <h1 class="skillTitle">Vue.js</h1>
+                        <ul class="bodyText">
+                            <li class="universalBody">Vast amount of experience with regards to developing with it as it
+                                is the most common technology stack used in the eServices cluster of my home
+                                organization.</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-12 mb-3 col-xl-4 animate__animated animate__zoomIn">
                     <div class="skill">
-                        <h1 class = "skillTitle">MySQL</h1>
+                        <h1 class="skillTitle">MySQL</h1>
                         <ul>
-                            <li class = "universalBody">Currently in a training period with a startup company that has been guiding me through utilizing it along with its integration with websites and web frameworks.</li>
+                            <li class="universalBody">Currently in a training period with a startup company that has
+                                been guiding me through utilizing it along with its integration with websites and web
+                                frameworks.</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-12 col-xl-4 mb-3 animate__animated animate__zoomInRight">
                     <div class="skill">
-                        <h1 class = "skillTitle">PHP</h1>
+                        <h1 class="skillTitle">PHP</h1>
                         <ul>
-                            <li class = "universalBody">Currently in a training period with the aforementioned startup company that has been guiding me through building websites utilizing this along with the web framework Laravel.</li>
+                            <li class="universalBody">Currently in a training period with the aforementioned startup
+                                company that has been guiding me through building websites utilizing this along with the
+                                web framework Laravel.</li>
                         </ul>
                     </div>
                 </div>
             </div>
-
-            <h4 class = "universalSubheader mt-5">&lt;/skills&gt;</h4>
+            <h4 class="universalSubheader mt-5">&lt;/skills&gt;</h4>
         </div>
-
-        <div data-aos="fade-up" class = "row mt-5">
-            <h4 id = "projects" class = "universalSubheader mb-5">&lt;projects&gt;</h4>
+        
+        <!-- PROJECTS -->
+        <div data-aos="fade-up" class="row mt-5">
+            <h4 id="projects" class="universalSubheader mb-5">&lt;projects&gt;</h4>
             <div class="col">
-                <div data-aos="fade-right" class="project" style = "margin-bottom: 10px;">
-                    <div class = "row">
-                        <div class = "col-lg projectCard">
-                            <h1 class = "universalHeader universalHeaderSpecial1">Portfolio Website</h1>
-                            <p class = "universalBody universalBodySpeical1">
-                                A website deployed on GitHub pages that I developed to serve as a Portfolio for all my experiences and work so far.
+                <div data-aos="fade-right" class="project" style="margin-bottom: 10px;">
+                    <div class="row">
+                        <div class="col-lg projectCard">
+                            <h1 class="universalHeader universalHeaderSpecial1">Portfolio Website</h1>
+                            <p class="universalBody universalBodySpeical1">
+                                A website deployed on GitHub pages that I developed to serve as a Portfolio for all my
+                                experiences and work so far.
                             </p>
-                            <p class = "leftTags">
-                                <span class = "projectTag">HTML</span>
-                                <span class = "projectTag">CSS</span>
-                                <span class = "projectTag">JS</span>
-                                <span class = "projectTag" style = "margin-right: 0px;">Bootstrap</span>
+                            <p class="leftTags">
+                                <span class="projectTag">HTML/CSS</span>
+                                <span class="projectTag">JS</span>
+                                <span class="projectTag" style="margin-right: 0px;">Bootstrap</span>
                             </p>
-                            <p class = "leftTags">
-                                <a href="https://github.com/KennethFranco/GrabGrub-Django-Website" target="_blank" rel="noopener noreferrer">
-                                    <svg width ="40px" height = "40px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16" style = "">
-                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            <p class="leftTags">
+                                <a href="https://github.com/KennethFranco/kennethfranco" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <svg width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
                                     </svg>
                                 </a>
-
-                                
-                                <!-- <svg width ="40px" height = "40px xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16" >
-                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
-                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
-                                </svg> -->
                             </p>
                         </div>
-                        <div class = "col-lg col-sm-12" style = "text-align: center;">
-                            <div id = "image1" class = "imageContainer">
-                                <img class = "imageInContainer" src = "personalportfolio.png" style = "min-width: 100%;">
+                        <div class="col-lg col-sm-12" style="text-align: center;">
+                            <div id="image1" class="imageContainer">
+                                <img class="imageInContainer" src="personalportfolio.png" style="min-width: 100%;">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left" class="project" style="margin-bottom: 10px;">
+                    <div class="row">
+                        <div class="col-lg col-sm-12" style="text-align: center;" style="background-color: #04f06a;">
+                            <div id="image2" class="imageContainer mr-2">
+                                <img class="imageInContainer" src="grabgrubcover.png">
+                            </div>
+
+                        </div>
+                        <div class="col col-sm-0 projectCard">
+                            <h1 class="universalHeader rightTags">GrabGrub</h1>
+                            <p class="universalBody universalBodySpecial2">A full-stack website utilizing the Django
+                                framework that I developed along with two other groupmates for our final project.
+                                Enables users to create accounts which they can use to order food from stores in
+                                GrabGrub, or to sell food themselves via their own businesses. Capable of the four basic
+                                CRUD operations.</p>
+                            <p class="rightTags">
+                                <span class="projectTag">Django</span>
+                                <span class="projectTag" style="margin-right: 0px;">HTML/CSS</span>
+                            </p>
+                            <p class="rightTags">
+                                <a href="https://github.com/KennethFranco/GrabGrub-Django-Website" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <svg width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                    </svg>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-right" class="project" style="margin-bottom: 10px;">
+                    <div class="row">
+                        <div class="col rojectCard">
+                            <h1 class="universalHeader universalHeaderSpecial1">InstaEats</h1>
+                            <p class="universalBody universalBodySpeical1">
+                                An Android mobile application I developed along with my groupmates for our final project
+                                for our Android Development elective. Similar to GrabGrub, it also allows for users to
+                                register within the app as either consumers who can purchase food, or businesses who can
+                                sell food. Capable of the four basic CRUD operations and has a lot more backend
+                                capabilities such as allowing users to view their order history and the histories of
+                                businesses within the app.
+                            </p>
+                            <p class="leftTags">
+                                <span class="projectTag">Java</span>
+                                <span class="projectTag" style="margin-right: 0px;">Android Studio</span>
+                            </p>
+                            <p class="leftTags">
+                                <a href="https://github.com/KennethFranco/InstaEats-Android-Mobile-Application" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <svg width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                    </svg>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col-lg col-sm-12" style="text-align: center;">
+                            <div id="image3" class="imageContainer">
+                                <img class="imageInContainer" src="instaeats.png" style="min-width: 100%;">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left" class="project" style="margin-bottom: 10px;">
+                    <div class="row">
+                        <div class="col-lg col-sm-12" style="text-align: center;">
+                            <div id="image4" class="imageContainer">
+                                <img class="imageInContainer" src="ateneovaccinetracker.png">
+                            </div>
+                        </div>
+                        <div class="col projectCard">
+                            <h1 class="universalHeader rightTags">Ateneo Vaccine Tracker</h1>
+                            <p class="universalBody universalBodySpecial2">A backend Java application utilizing Spring
+                                Boot that allows the user to interact with and manipulate an integrated MySQL database
+                                through Java Persistence API (JPA) with GET and POST requests. </p>
+                            <p class="rightTags">
+                                <span class="projectTag" style="margin-right: 0px;">Java</span>
+                            </p>
+                            <p class="rightTags">
+                                <a href="https://github.com/KennethFranco/VaccineTracker-Java" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <svg width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                    </svg>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-right" class="project" style="margin-bottom: 10px;">
+                    <div class="row">
+                        <div class="col projectCard">
+                            <h1 class="universalHeader universalHeaderSpecial1">Abakada Studios Web Development Intern
+                                Assessment</h1>
+                            <p class="universalBody universalBodySpeical1">
+                                A website that served as a programming assessment I was given after passing the initial
+                                interview at my very first internship. Allows for a user to do the four basic CRUD
+                                operations while also validating the inputted data prior to being displayed on the
+                                website. Automatically updates entries as necessary.
+                            </p>
+                            <p class="leftTags">
+                                <span class="projectTag">HTML/CSS</span>
+                                <span class="projectTag">JS</span>
+                            </p>
+                            <p class="leftTags">
+                                <a href="https://github.com/KennethFranco/AbakadaStudiosAssessment-HTML-CSS-JS" target="_blank"
+                                    rel="noopener noreferrer" style = "text-decoration: none;">
+                                    <svg width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"
+                                        style="margin-right: 20px">
+                                        <path
+                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                    </svg>
+
+                                </a>
+
+                                <a href="https://kennethfranco.github.io/AbakadaStudiosAssessment-HTML-CSS-JS/" target="_blank"
+                                rel="noopener noreferrer">
+                                    <svg width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-forward-fill" viewBox="0 0 16 16">
+                                        <path d="m9.77 12.11 4.012-2.953a.647.647 0 0 0 0-1.114L9.771 5.09a.644.644 0 0 0-.971.557V6.65H2v3.9h6.8v1.003c0 .505.545.808.97.557z"/>
+                                      </svg>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col-lg col-sm-12" style="text-align: center;">
+                            <div id="image5" class="imageContainer">
+                                <img class="imageInContainer" src="abakadastudiosassessment.png">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left" class="project" style="margin-bottom: 10px;">
+                    <div class="row">
+                        <div class="col-lg col-sm-12" style="text-align: center;">
+                            <div id = "image6" class = "imageContainer"> 
+                                <img class = "imageInContainer" src="imsummitmechanics.png" alt="">
                             </div>
                             
                         </div>
-                    </div>
-                </div>
-
-                <!-- Project #1 -->
-                <div data-aos="fade-left" class="project" style = "margin-bottom: 10px;">
-                    <div class = "row">
-                        <div class = "col-lg col-sm-12" style = "text-align: center;" style = "background-color: #04f06a;">
-                            <div id = "image2"  class = "imageContainer mr-2">
-                                <img class = "imageInContainer" src = "grabgrubcover.png">
-                            </div>
-                            
-                        </div> 
-                        <div class = "col col-sm-0 projectCard">
-                            <h1 class = "universalHeader rightTags">GrabGrub</h1>
-                            <p class = "universalBody universalBodySpecial2">A full-stack website utilizing the Django framework that I developed along with two other groupmates for our final project. Enables users to create accounts which they can use to order food from stores in GrabGrub, or to sell food themselves via their own businesses. Capable of the four basic CRUD operations.</p>
-                            <p class = "rightTags">
-                                <span class = "projectTag">Django</span>
-                                <span class = "projectTag">HTML</span>
-                                <span class = "projectTag" style = "margin-right: 0px;">CSS</span>
-                            </p>
-                            <p class = "rightTags">
-                                <a href="https://github.com/KennethFranco/GrabGrub-Django-Website" target="_blank" rel="noopener noreferrer">
-                                    <svg width ="40px" height = "40px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16" style = "">
-                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                                    </svg>
-                                </a>
-
-                                
-                                <!-- <svg width ="40px" height = "40px xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16" >
-                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
-                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
-                                </svg> -->
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project #2 -->
-                <div data-aos="fade-right" class="project" style = "margin-bottom: 10px;">
-                    <div class = "row">
-                        <div class = "col rojectCard">
-                            <h1 class = "universalHeader universalHeaderSpecial1">InstaEats</h1>
-                            <p class = "universalBody universalBodySpeical1">
-                                An Android mobile application I developed along with my groupmates for our final project for our Android Development elective. Similar to GrabGrub, it also allows for users to register within the app as either consumers who can purchase food, or businesses who can sell food. Capable of the four basic CRUD operations and has a lot more backend capabilities such as allowing users to view their order history and the histories of businesses within the app.
-                            </p>
-                            <p class = "leftTags">
-                                <span class = "projectTag">Java</span>
-                                <span class = "projectTag" style = "margin-right: 0px;">Android Studio</span>
-                            </p>
-                            <p class = "leftTags">
-                                <a href="https://github.com/KennethFranco/GrabGrub-Django-Website" target="_blank" rel="noopener noreferrer">
-                                    <svg width ="40px" height = "40px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16" style = "">
-                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                                    </svg>
-                                </a>
-
-                                
-                                <!-- <svg width ="40px" height = "40px xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16" >
-                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
-                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
-                                </svg> -->
-                            </p>
-                        </div>
-                        <div class = "col-lg col-sm-12" style = "text-align: center;">
-                            <div id = "image3" class = "imageContainer">
-                                <img class = "imageInContainer" src = "instaeats.png" style = "min-width: 100%;">
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project #3 -->
-                <div data-aos="fade-left" class="project" style = "margin-bottom: 10px;">
-                    <div class = "row">
-                        <div class = "col-lg col-sm-12" style = "text-align: center;">
-                            <div id = "image4" class = "imageContainer">
-                                <img class = "imageInContainer" src = "ateneovaccinetracker.png" >
-                            </div>
-                        </div>
-                        <div class = "col projectCard">
-                            <h1 class = "universalHeader rightTags">Ateneo Vaccine Tracker</h1>
-                            <p class = "universalBody universalBodySpecial2">A backend Java application utilizing Spring Boot that allows the user to interact with and manipulate an integrated MySQL database through Java Persistence API (JPA) with GET and POST requests.  </p>
-                            <p class = "rightTags">
-                                <span class = "projectTag" style = "margin-right: 0px;">Java</span>
-                            </p>
-                            <p class = "rightTags">
-                                <a href="https://github.com/KennethFranco/GrabGrub-Django-Website" target="_blank" rel="noopener noreferrer">
-                                    <svg width ="40px" height = "40px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16" style = "">
-                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                                    </svg>
-                                </a>
-
-                                
-                                <!-- <svg width ="40px" height = "40px xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16" >
-                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
-                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
-                                </svg> -->
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project #4 -->
-                <div data-aos="fade-right" class="project" style = "margin-bottom: 10px;">
-                    <div class = "row">
-                        <div class = "col projectCard">
-                            <h1 class = "universalHeader universalHeaderSpecial1">Abakada Studios Web Development Intern Assessment</h1>
-                            <p class = "universalBody universalBodySpeical1">
-                                A website that served as a programming assessment I was given after passing the initial interview at my very first internship. Allows for a user to do the four basic CRUD operations while also validating the inputted data prior to being displayed on the website. Automatically updates entries as necessary.
-                            </p>
-                            <p class = "leftTags">
-                                <span class = "projectTag">HTML</span>
-                                <span class = "projectTag">CSS</span>
-                                <span class = "projectTag">JS</span>
-                            </p>
-                            <p class = "leftTags">
-                                <a href="https://github.com/KennethFranco/GrabGrub-Django-Website" target="_blank" rel="noopener noreferrer">
-                                    <svg width ="40px" height = "40px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16" style = "">
-                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                                    </svg>
-                                </a>
-
-                                
-                                <!-- <svg width ="40px" height = "40px xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16" >
-                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
-                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
-                                </svg> -->
-                            </p>
-                        </div>
-                        <div class = "col-lg col-sm-12" style = "text-align: center;">
-                            <div id = "image5" class = "imageContainer">
-                                <img class = "imageInContainer" src = "abakadastudiosassessment.png">
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project #5 -->
-                <div data-aos="fade-left" class="project" style = "margin-bottom: 10px;">
-                    <div class = "row">
-                        <div class = "col-md col-sm-12" style = "text-align: center;">
-                            <h1>image</h1>
-                        </div>
-                        <div class = "col col-sm-0 projectCard">
-                            <h1 class = "universalHeader">IM Summit 2021: Exceed</h1>
-                            <p class = "bodyText universalBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, quas minima enim aspernatur, eveniet voluptatem doloribus obcaecati consequatur itaque illum quos cumque. Molestias nihil vitae cumque doloribus. Fugit, ipsum optio?</p>
-                            <p>
-                                <span class = "projectTag">Vue.js</span>
-                                <span class = "projectTag">HTML</span>
-                                <span class = "projectTag" style = "margin-right: 0px;">CSS</span>
-                            </p>
-                            <p>
-                                <a href="https://github.com/KennethFranco/GrabGrub-Django-Website" target="_blank" rel="noopener noreferrer">
-                                    <svg width ="40px" height = "40px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16" style = "">
-                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                                    </svg>
-                                </a>
-
-                                
-                                <!-- <svg width ="40px" height = "40px xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16" >
-                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
-                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
-                                </svg> -->
-                            </p>
+                        <div class="col col-sm-0 projectCard">
+                            <h1 class="universalHeader rightTags">IM Summit 2021: Exceed</h1>
+                            <p class="universalBody universalBodySpecial2">
+                                A mainly frontend website that showcased my home organization's flagship event. 
+                                Allowed users to view the details of the event and register to participate in it. 
+                                Was assigned to and fully developed the frontend of the Mechanics page with the guidance of the eServices cluster.
+                            <p class=  "rightTags">
+                                <span class="projectTag">Vue.js</span>
+                                <span class="projectTag" style="margin-right: 0px;">HTML/CSS</span>
+                            </p >
                         </div>
                     </div>
                 </div>
 
             </div>
-            <h4 class = "universalSubheader mt-5" data-aos = "fade-down">&lt;/projects&gt;</h4>
+            <h4 class="universalSubheader mt-5" data-aos="fade-down">&lt;/projects&gt;</h4>
         </div>
-
-        <div id = "footer" data-aos="fade-up" class="row mt-5">
-            <h4 class = "universalSubheader mb-5">&lt;footer&gt;</h4>
-            <div class="col-md-7 col-sm-12" style = "text-align: center;">
-                <img src="avatar.png" alt="" style = "max-width: 35%;">
+        
+        <!-- FOOTER -->
+        <div id="footer" data-aos="fade-up" class="row mt-5">
+            <h4 class="universalSubheader mb-5">&lt;footer&gt;</h4>
+            <div class="col-lg col-sm-12" style="text-align: center;">
+                <img id="footerImage" src="avatar.png" alt="" style="max-width: 35%;">
             </div>
             <div class="col footerIcons" style="text-align: center">
-                <h1 class = "mb-5" style= "text-align: center">Thanks for dropping by :> Feel free to contact me!</h1>
-                <a href="https://www.linkedin.com/in/kenneth-laurenz-franco-162b94200/" target="_blank" rel="noopener noreferrer" style = "text-decoration: none;">
-                    <svg style = "margin-right: 35px;" width = "100px" height = "100px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                      </svg>
-                </a>
-     
-                  <a style = "text-decoration: none;" href="mailto:kennethlaurenzfranco@gmail.com">
-                    <svg style = "margin-right: 35px;"  width = "125px" height = "125px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
-                      </svg>
-                  </a>
-    
-                  <a style = "text-decoration: none;" href="https://github.com/KennethFranco" target="_blank" rel="noopener noreferrer">
-                    <svg width ="100px" height = "100px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                <h1 class="mb-5" style="text-align: center">Thanks for dropping by :> Feel free to contact me!</h1>
+                <a href="https://www.linkedin.com/in/kenneth-laurenz-franco-162b94200/" target="_blank"
+                    rel="noopener noreferrer" style="text-decoration: none;">
+                    <svg style="margin-right: 35px;" width="100px" height="100px" xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
                     </svg>
-                    </a>
+                </a>
+
+                <a style="text-decoration: none;" href="mailto:kennethlaurenzfranco@gmail.com">
+                    <svg style="margin-right: 35px;" width="125px" height="125px" xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                    </svg>
+                </a>
+
+                <a style="text-decoration: none;" href="https://github.com/KennethFranco" target="_blank"
+                    rel="noopener noreferrer">
+                    <svg width="100px" height="100px" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                </a>
 
             </div>
-            <h4 class = "universalSubheader mt-5">&lt;/footer&gt;</h4>
+            <h4 class="universalSubheader mt-5">&lt;/footer&gt;</h4>
         </div>
 
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

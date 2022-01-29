@@ -26,7 +26,7 @@
     <script>
         AOS.init();
     </script>
-    <nav class = "container navbar navbar-expand-md navbar-dark">
+    <nav class = "container navbar navbar-expand-md navbar-dark mt-5">
         <a href="index.html" class = "universalSubheader" style = "color:#04f06a; text-decoration: none;">Ken</a>
         <button
             class = "navbar-toggler"
@@ -42,14 +42,14 @@
         
         <div class = "collapse navbar-collapse" id = "toggleMobileMenu">
             <ul class = "navbar-nav ms-auto">
-                <li>
-                    <a class = "nav-link universalBody" href = "about.html">About</a>
+                <li class = "navbarOption">
+                    <a class = "nav-link universalBody navbarMobile" href = "about.html">About</a>
                 </li>
-                <li>
-                    <a class = "nav-link universalBody" href = "index.html#projects">Works</a>
+                <li class = "navbarOption">
+                    <a class = "nav-link universalBody navbarMobile" href = "index.html#projects">Works</a>
                 </li>
-                <li>
-                    <a class = "nav-link universalBody" href = "#footer">Contact</a>
+                <li class = "navbarOption">
+                    <a class = "nav-link universalBody navbarMobile" href = "#footer">Contact</a>
                 </li>
             </ul>
         </div>
@@ -73,8 +73,16 @@
                         I began my journey into the professional setting of development by interning at <span style = "color: #04f06a" >Abakada Studios</span> as a <span style = "color: #04f06a">Web Development Intern</span>. Moving forward, I hope to be able to gain more experience in developer work, and to pursue internships to immerse myself in a more professional setting.
                     </p>
                     <div class="row univrsalButtonSpecial">
-                        <a href="/francoResume.pdf" target="_blank" rel="noopener noreferrer">
-                            <button class="universalButton">Download Resume!</button>
+                        <a href="/francoResume.pdf" download = "Kenneth Laurenz Franco (Ken) 2022 Resume" target="_blank" rel="noopener noreferrer">
+                            <button type="button" class="btn btn-primary" id = "downloadButton">
+                                <span>
+                                    <svg style = "margin-right: 20px" width=  "40px"; height=  "40px"; xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                        <path fill = "black" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                                        <path fill = "black" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                                      </svg>
+                                </span>
+                                Download Resume!
+                            </button>
                         </a>
                     </div>
 
@@ -127,7 +135,7 @@
                             </p>
                         </div>
                         <ul>
-                            <li class="universalBody">Employed in a team of developers that have been and are currently assigned to working on a Full-Stack Enrollment and Admission System for one of the company's clients.</li>
+                            <li class="universalBody">Employed in a team of developers that have been and are currently assigned to working on a full-stack Enrollment and Admission System for one of the company's clients.</li>
                             <li class="universalBody">Develops responsive frontend pages with data validation through HTML, CSS, and Bootstrap that are also tied into the system's backend.</li>
                             <li class="universalBody">Configures the system's many backend functionalities mainly involving many different doctype CRUD operations and other features, through the use of Javascript, jQuery, and ERPNext's own built-in capabilities.</li>
                             <li class = "universalBody">Works in a fast-paced setting under the Agile Methodology.</li>
@@ -276,8 +284,8 @@
         <div id = "footer" class="container mt-5" data-aos="fade-up">
             <h4 class="universalSubheader mb-5">&lt;footer&gt;</h4>
             <div class="row">
-                <div class="col-md-7 col-sm-12" style = "text-align: center;">
-                    <img src="avatar.png" alt="" style = "max-width: 35%;">
+                <div class="col-lg col-sm-12" style = "text-align: center;">
+                    <img id = "footerImage" src="avatar.png" alt="" style = "max-width: 35%;">
 
                 </div>
                 <div class="col footerIcons" style="text-align: center">
@@ -365,6 +373,7 @@
         </div> -->
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 
 </html>
