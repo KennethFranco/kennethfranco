@@ -70,7 +70,13 @@
                         I am currently a junior majoring in <span style = "color: #04f06a">BS Management Information Systems (MIS)</span> at the Ateneo de Manila University, specializing in <span style = "color: #04f06a">Data Science and Analytics</span> as well as <span style = "color: #04f06a">Enterprise Systems</span>.
                         <br>
                         <br>
-                        I began my journey into the professional setting of development by interning at <span style = "color: #04f06a" >Abakada Studios</span> as a <span style = "color: #04f06a">Web Development Intern</span>. Moving forward, I hope to be able to gain more experience in developer work, and to pursue internships to immerse myself in a more professional setting.
+                        I began my journey into the professional setting of development by interning at <span style = "color: #04f06a" >Abakada Studios</span> as a <span style = "color: #04f06a">Web Development Intern</span>, wherein I was assigned to a team of developers who worked together in building an Enrollment and Admission System for an educational institution. 
+                    </p>
+                    <p class = "universalBody mb-5" style = "text-align: left">
+                        Currently, I am now employed as a <span style = "color: #04f06a">Developer Intern</span> for <span style = "color: #04f06a" >MedGrocer</span>, wherein I've been assigned to developing systems and websites related to healthcare and medicine for the company's internal use as well as for its external clients.
+                    </p>
+                    <p class = "universalBody mb-5" style = "text-align: left">
+                        Moving forward, I hope to be able to gain more experience in developer work, and to pursue internships to immerse myself in a more professional setting.
                     </p>
                     <div class="row univrsalButtonSpecial">
                         <a href="francoResume.pdf" target="_blank" rel="noopener noreferrer">
@@ -95,145 +101,178 @@
             <h4 class="universalSubheader mb-5" data-aos="fade-up">&lt;experience&gt;</h4>
             <div class="row">
                 <div id="mobileTabs" class="col-12 mb-4" style="text-align: center;">
-                    <ul style="display: inline; padding-left: 0px;">
-                        <li onclick="showFirst()" id="tabItemSmall1" class="mobileTab universalHeader">abkd</li>
-                        <li onclick="showSecond()" id="tabItemSmall2" class="mobileTab universalHeader">MISA</li>
-                        <li onclick="showThird()" id="tabItemSmall3" class="mobileTabSpecial universalHeader">JFeL</li>
+                    <ul style="display: inline; padding-left: 0px;" id = "mobileTabsChecker">
+                        <li onclick="showCompany(medgrocerCompany)" id="medgrocerCompanyTabMobile" class="mobileTab universalHeader">MG</li>
+                        <li onclick="showCompany(abakadaCompany)" id="abakadaCompanyTabMobile" class="mobileTab universalHeader">abkd</li>
+                        <li onclick="showCompany(misaCompany)" id="misaCompanyTabMobile" class="mobileTab universalHeader">MISA</li>
+                        <li onclick="showCompany(jfelCompany)" id="jfelCompanyTabMobile" class="mobileTabSpecial universalHeader">JFeL</li>
                     </ul>
                 </div>
                 <div id="normalTabs" class="col-lg">
-                    <ul id="tabs" style="list-style-type: none; padding: 0">
-                        <li onclick="showFirst()" id="tabItem1" class="normalTab universalHeader">abkd</li>
-                        <li onclick="showSecond()" id="tabItem2" class="normalTab universalHeader">MISA</li>
-                        <li onclick="showThird()" id="tabItem3" class="normalTab universalHeader">JFeL</li>
+                    <ul id="normalTabsChecker" class = "tabs" style="list-style-type: none; padding: 0">
+                        <li onclick="showCompany(medgrocerCompany)" id="medgrocerCompanyTabNormal" class="normalTab universalHeader">MG</li>
+                        <li onclick="showCompany(abakadaCompany)" id="abakadaCompanyTabNormal" class="normalTab universalHeader">abkd</li>
+                        <li onclick="showCompany(misaCompany)" id="misaCompanyTabNormal" class="normalTab universalHeader">MISA</li>
+                        <li onclick="showCompany(jfelCompany)" id="jfelCompanyTabNormal" class="normalTab universalHeader">JFeL</li>
                     </ul>
-
                 </div>
                 <div class="col">
                     <h1 id="initialExp" class="universalBody" style="display: block;">Click on any of the names on the
                         left to know more about my own journey in <span style="color: #04f06a">companies</span> and
                         <span style="color: #04f06a">school organizations</span>!</h1>
-                    <div class="animate__animated animate__fadeIn" id="firstCompany" style="display: none;">
-                        <div class="row">
-                            <h1 class="mb-5 universalTitle" style="color: white;">
-                                <a href="https://www.abakadastudios.com/" target="_blank" rel="noopener noreferrer"
-                                    style="text-decoration: none; color: #04f06a">
-                                    @Abakada Studios
-                                </a>
-                                </span>
-                                <span style="color: #04f06a">
-
-                            </h1>
-                            <h1 class="universalTitle">Web Development Intern</h1>
-
+                        <div id = "companyContainer">
+                            <!-- MEDGROCER DIV -->
+                            <div class="animate__animated animate__fadeIn" id="medgrocerCompany" style="display: none;">
+                                <div class="row">
+                                    <h1 class="mb-5 universalTitle" style="color: white;">
+                                        <a href="https://medgrocer.com/" target="_blank" rel="noopener noreferrer"
+                                            style="text-decoration: none; color: #04f06a">
+                                            @MedGrocer
+                                        </a>
+                                        </span>
+                                        <span style="color: #04f06a">
+        
+                                    </h1>
+                                    <h1 class="universalTitle">Developer Intern</h1>
+        
+                                </div>
+                                <div class="row">
+                                    <p class="mt-3 mb-5">
+                                        <span class="projectTag">
+                                            Mar 2022 - Present
+                                        </span>
+                                    </p>
+                                </div>
+                                <ul>
+                                    <li class="universalBody">Utilizes React.js, GatsbyJS, Firebase, and Django in creating websites and systems related to medicine and healthcare for both the company's internal use and its external clients.</li>
+                                </ul>
+                            </div>
+                            <!-- ABAKADA DIV -->
+                        <div class="animate__animated animate__fadeIn" id="abakadaCompany" style="display: none;">
+                            <div class="row">
+                                <h1 class="mb-5 universalTitle" style="color: white;">
+                                    <a href="https://www.abakadastudios.com/" target="_blank" rel="noopener noreferrer"
+                                        style="text-decoration: none; color: #04f06a">
+                                        @Abakada Studios
+                                    </a>
+                                    </span>
+                                    <span style="color: #04f06a">
+    
+                                </h1>
+                                <h1 class="universalTitle">Web Development Intern</h1>
+    
+                            </div>
+                            <div class="row">
+                                <p class="mt-3 mb-5">
+                                    <span class="projectTag">
+                                        Oct 2021 - Mar 2022
+                                    </span>
+                                </p>
+                            </div>
+                            <ul>
+                                <li class="universalBody">Employed in a team of developers that have been and are currently assigned to working on a full-stack Enrollment and Admission System for one of the company's clients.</li>
+                                <li class="universalBody">Develops responsive frontend pages with data validation through HTML, CSS, and Bootstrap that are also tied into the system's backend.</li>
+                                <li class="universalBody">Configures the system's many backend functionalities mainly involving many different doctype CRUD operations and other features, through the use of Javascript, jQuery, and ERPNext's own built-in capabilities.</li>
+                                <li class = "universalBody">Works in a fast-paced setting under the Agile Methodology.</li>
+                            </ul>
                         </div>
-                        <div class="row">
-                            <p class="mt-3 mb-5">
-                                <span class="projectTag">
-                                    Oct 2021 - Present
-                                </span>
-                            </p>
+                        <!-- MISA DIV -->
+                        <div class="animate__animated animate__fadeIn" id="misaCompany" style="display: none;">
+                            <div class="row">
+                                <h1 class="mb-5 universalTitle" style="color: white;">
+                                    <a href="https://www.facebook.com/Ateneo.MISA" target="_blank" rel="noopener noreferrer"
+                                        style="text-decoration: none; color: #04f06a">
+                                        @Ateneo Management Information Systems Association
+                                    </a>
+                                    </span>
+                                    <span style="color: #04f06a">
+    
+                                </h1>
+    
+                            </div>
+                            <div class="row">
+                                <h1 class="universalTitle">Associate Vice President for Systems Documentation</h1>
+                                <p class="mt-3 mb-5">
+                                    <span class="projectTag">
+                                        Jul 2021 - Present
+                                    </span>
+                                </p>
+                            </div>
+                            <ul>
+                                <li class="universalBody">Manages the Git account of the eServices cluster.</li>
+                                <li class="universalBody">Spearheads all documentation for both user and system of all eServices Projects.</li>
+                                <li class="universalBody">Ensures that technical terms are understandable for users of cluster products and projects.</li>
+                                <li class = "universalBody">Trains Systems Documentation officers under the sub-cluster in Git and systems documentation procedures.</li>
+                            </ul>
+                            <div class="row mt-5">
+                                <h1 class="universalTitle">Systems Documentation Officer</h1>
+                                <p class="mt-3 mb-5">
+                                    <span class="projectTag">
+                                        Sep 2020 - May 2021
+                                    </span>
+                                </p>
+                            </div>
+                            <ul>
+                                <li class="universalBody">Learned about version control systems and put this into action through utilizing GitLab's functions in creating and managing repositories for website development.</li>
+                                <li class="universalBody">Practiced and honed HTML/CSS skills with the guidance of the eServices cluster.</li>
+                            </ul>
+                            <div class="row mt-5">
+                                <h1 class="universalTitle">Frontend Web Developer, IM Summit 2021: Exceed</h1>
+                                <p class="mt-3 mb-5">
+                                    <span class="projectTag">
+                                        Feb 2021
+                                    </span>
+                                </p>
+                            </div>
+                            <ul>
+                                <li class="universalBody">Worked in a team composed of four developers who collaborated and were guided by the eServices cluster of MISA to develop a website for the organization's flagship event: IM Summit 2021: Exceed.</li>
+                                <li class="universalBody">Utilized HTML, CSS, and Vue.js to create the Mechanics page for the dedicated website of the event.</li>
+                            </ul>
+                            <div class="row mt-5">
+                                <h1 class="universalTitle">Programs Head, Jumpstart 2020: Voyager</h1>
+                                <p class="mt-3 mb-5">
+                                    <span class="projectTag">
+                                        Aug 2020 - Sep 2020
+                                    </span>
+                                </p>
+                            </div>
+                            <ul>
+                                <li class="universalBody"> Spearheaded the end-to-end program flow of Day 1 of the event. This day specifically composed of a Webinar wherein incoming MIS freshmen were welcomed to and taught about ADMU's BS MIS program.</li>
+                                <li class="universalBody">Handled and organized all communication lines between the core speakers and participants of the event.</li>
+                                <li class="universalBody">Managed the schedule and flow of the program on the day itself and ensured program was being followed properly and was flowing smoothly.</li>
+                            </ul>
                         </div>
-                        <ul>
-                            <li class="universalBody">Employed in a team of developers that have been and are currently assigned to working on a full-stack Enrollment and Admission System for one of the company's clients.</li>
-                            <li class="universalBody">Develops responsive frontend pages with data validation through HTML, CSS, and Bootstrap that are also tied into the system's backend.</li>
-                            <li class="universalBody">Configures the system's many backend functionalities mainly involving many different doctype CRUD operations and other features, through the use of Javascript, jQuery, and ERPNext's own built-in capabilities.</li>
-                            <li class = "universalBody">Works in a fast-paced setting under the Agile Methodology.</li>
-                        </ul>
-                    </div>
-                    <div class="animate__animated animate__fadeIn" id="secondCompany" style="display: none;">
-                        <div class="row">
-                            <h1 class="mb-5 universalTitle" style="color: white;">
-                                <a href="https://www.facebook.com/Ateneo.MISA" target="_blank" rel="noopener noreferrer"
-                                    style="text-decoration: none; color: #04f06a">
-                                    @Ateneo Management Information Systems Association
-                                </a>
-                                </span>
-                                <span style="color: #04f06a">
-
-                            </h1>
-
+                        <!-- JFEL DIV -->
+                        <div class="animate__animated animate__fadeIn" id="jfelCompany" style="display: none;" id = "jfelCompany">
+                            <div class="row">
+                                <h1 class="mb-5 universalTitle" style="color: white;">
+                                    <a href="https://www.facebook.com/jfelonline" target="_blank" rel="noopener noreferrer"
+                                        style="text-decoration: none; color: #04f06a">
+                                        @Junior Fellowship for Financial Literacy
+                                    </a>
+                                    </span>
+                                    <span style="color: #04f06a">
+    
+                                </h1>
+                                <h1 class="universalTitle">Communications Associate</h1>
+    
+                            </div>
+                            <div class="row">
+                                <p class="mt-3 mb-5">
+                                    <span class="projectTag">
+                                        Aug 2021 - Present
+                                    </span>
+                                </p>
+                            </div>
+                            <ul>
+                                <li class="universalBody">Helps in managing the various online platforms of the organization.</li>
+                                <li class="universalBody">Assists in the maintenance of the blast calendar with regards to post scheduling.</li>
+                                <li class="universalBody">Crafts the copy for social media posts (including spiels, captions and publication content).</li>
+                                <li class="universalBody">Aids the AVP for Communications in facilitating the collection of sponsor generated content.</li>
+                            </ul>
                         </div>
-                        <div class="row">
-                            <h1 class="universalTitle">Associate Vice President for Systems Documentation</h1>
-                            <p class="mt-3 mb-5">
-                                <span class="projectTag">
-                                    Jul 2021 - Present
-                                </span>
-                            </p>
                         </div>
-                        <ul>
-                            <li class="universalBody">Manages the Git account of the eServices cluster.</li>
-                            <li class="universalBody">Spearheads all documentation for both user and system of all eServices Projects.</li>
-                            <li class="universalBody">Ensures that technical terms are understandable for users of cluster products and projects.</li>
-                            <li class = "universalBody">Trains Systems Documentation officers under the sub-cluster in Git and systems documentation procedures.</li>
-                        </ul>
-                        <div class="row mt-5">
-                            <h1 class="universalTitle">Systems Documentation Officer</h1>
-                            <p class="mt-3 mb-5">
-                                <span class="projectTag">
-                                    Sep 2020 - May 2021
-                                </span>
-                            </p>
-                        </div>
-                        <ul>
-                            <li class="universalBody">Learned about version control systems and put this into action through utilizing GitLab's functions in creating and managing repositories for website development.</li>
-                            <li class="universalBody">Practiced and honed HTML/CSS skills with the guidance of the eServices cluster.</li>
-                        </ul>
-                        <div class="row mt-5">
-                            <h1 class="universalTitle">Frontend Web Developer, IM Summit 2021: Exceed</h1>
-                            <p class="mt-3 mb-5">
-                                <span class="projectTag">
-                                    Feb 2021
-                                </span>
-                            </p>
-                        </div>
-                        <ul>
-                            <li class="universalBody">Worked in a team composed of four developers who collaborated and were guided by the eServices cluster of MISA to develop a website for the organization's flagship event: IM Summit 2021: Exceed.</li>
-                            <li class="universalBody">Utilized HTML, CSS, and Vue.js to create the Mechanics page for the dedicated website of the event.</li>
-                        </ul>
-                        <div class="row mt-5">
-                            <h1 class="universalTitle">Programs Head, Jumpstart 2020: Voyager</h1>
-                            <p class="mt-3 mb-5">
-                                <span class="projectTag">
-                                    Aug 2020 - Sep 2020
-                                </span>
-                            </p>
-                        </div>
-                        <ul>
-                            <li class="universalBody"> Spearheaded the end-to-end program flow of Day 1 of the event. This day specifically composed of a Webinar wherein incoming MIS freshmen were welcomed to and taught about ADMU's BS MIS program.</li>
-                            <li class="universalBody">Handled and organized all communication lines between the core speakers and participants of the event.</li>
-                            <li class="universalBody">Managed the schedule and flow of the program on the day itself and ensured program was being followed properly and was flowing smoothly.</li>
-                        </ul>
-                    </div>
-                    <div class="animate__animated animate__fadeIn" id="thirdCompany" style="display: none;">
-                        <div class="row">
-                            <h1 class="mb-5 universalTitle" style="color: white;">
-                                <a href="https://www.facebook.com/jfelonline" target="_blank" rel="noopener noreferrer"
-                                    style="text-decoration: none; color: #04f06a">
-                                    @Junior Fellowship for Financial Literacy
-                                </a>
-                                </span>
-                                <span style="color: #04f06a">
-
-                            </h1>
-                            <h1 class="universalTitle">Communications Associate</h1>
-
-                        </div>
-                        <div class="row">
-                            <p class="mt-3 mb-5">
-                                <span class="projectTag">
-                                    Aug 2021 - Present
-                                </span>
-                            </p>
-                        </div>
-                        <ul>
-                            <li class="universalBody">Helps in managing the various online platforms of the organization.</li>
-                            <li class="universalBody">Assists in the maintenance of the blast calendar with regards to post scheduling.</li>
-                            <li class="universalBody">Crafts the copy for social media posts (including spiels, captions and publication content).</li>
-                            <li class="universalBody">Aids the AVP for Communications in facilitating the collection of sponsor generated content.</li>
-                        </ul>
-                    </div>
+                       
                 </div>
             </div>
             <h4 class="universalSubheader mt-5" data-aos="fade-down">&lt;/experience&gt;</h4>

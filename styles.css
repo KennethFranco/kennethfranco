@@ -398,7 +398,7 @@ path:hover{
     #mobileTabs{
         display: block;
     }
-    #tabs > li{
+    .tabs > li{
         display: inline;
     }
 

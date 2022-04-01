@@ -1,150 +1,62 @@
-
-function showFirst(){
+function showCompany(company){
   var initial = document.getElementById("initialExp");
   initial.style.display = "none";
 
-  var x = document.getElementById("firstCompany");
-  x.style.display = "block";
+  var currentCompany = company.id;
+  var currentCompanyNormalTab = company.id+"TabNormal";
+  var currentCompanyMobileTab = company.id+"TabMobile";
+  
+  // Showing/hiding companies
+  var children = document.getElementById("companyContainer").children;
+  for (i=0; i < children.length; i++){
+    console.log(children[i].id);
+    console.log(currentCompany);
+    if (children[i].id != currentCompany){
+      children[i].style.display = "none";
+    } else{
+      children[i].style.display = "block";
+    }
+  }
 
-  var y = document.getElementById("secondCompany");
-  y.style.display = "none";
+  // Changing highlights for Normal Tabs
+  var highlightChildrenNormal = document.getElementById("normalTabsChecker").children;
+  console.log(highlightChildrenNormal);
+  for (i=0; i < highlightChildrenNormal.length; i++){
+    var id = highlightChildrenNormal[i].id;
+    console.log(id);
+    console.log(currentCompanyNormalTab);
+    if (id != currentCompanyNormalTab){
+      highlightChildrenNormal[i].transition = "all 0.4s";
+      highlightChildrenNormal[i].style.borderLeft = "4px solid white";
+      highlightChildrenNormal[i].style.color = "white";
+      highlightChildrenNormal[i].style.cursor = "pointer";
+    } else{
+      highlightChildrenNormal[i].style.transition = "all 0.4s";
+      highlightChildrenNormal[i].style.borderLeft = "4px solid #04f06a";
+      highlightChildrenNormal[i].style.color = "#04f06a";
+      highlightChildrenNormal[i].style.cursor = "default";
+    }
+  }
 
-  var z = document.getElementById("thirdCompany");
-  z.style.display = "none";
-
-  var currentTab = document.getElementById("tabItem1");
-  currentTab.style.transition = "all 0.4s";
-  currentTab.style.borderLeft = "4px solid #04f06a";
-  currentTab.style.color = "#04f06a";
-  currentTab.style.cursor = "default";
-
-  var otherTab1 = document.getElementById("tabItem2");
-  otherTab1.transition = "all 0.4s";
-  otherTab1.style.borderLeft = "4px solid white";
-  otherTab1.style.color = "white";
-  otherTab1.style.cursor = "pointer";
-
-  var otherTab2 = document.getElementById("tabItem3");
-  otherTab2.transition = "all 0.4s";
-  otherTab2.style.borderLeft = "4px solid white";
-  otherTab2.style.color = "white";
-  otherTab2.style.cursor = "pointer";
-
-  var currentMobileTab = document.getElementById("tabItemSmall1");
-  currentMobileTab.style.transition = "all 0.4s";
-  currentMobileTab.style.borderBottom = "4px solid #04f06a";
-  currentMobileTab.style.color = "#04f06a";
-  currentMobileTab.style.cursor = "default";
-
-  var otherMobileTab1 = document.getElementById("tabItemSmall2");
-  otherMobileTab1.transition = "all 0.4s";
-  otherMobileTab1.style.borderBottom = "4px solid white";
-  otherMobileTab1.style.color = "white";
-  otherMobileTab1.style.cursor = "pointer";
-
-  var otherMobileTab2 = document.getElementById("tabItemSmall3");
-  otherMobileTab2.transition = "all 0.4s";
-  otherMobileTab2.style.borderBottom = "4px solid white";
-  otherMobileTab2.style.color = "white";
-  otherMobileTab2.style.cursor = "pointer";
+  // Changing highlights for Mobile Tabs
+  var highlightChildrenMobile = document.getElementById("mobileTabsChecker").children;
+  console.log(highlightChildrenMobile);
+  for (i=0; i < highlightChildrenMobile.length; i++){
+    var id = highlightChildrenMobile[i].id;
+    console.log(id);
+    console.log(currentCompanyMobileTab);
+    if (id != currentCompanyMobileTab){
+      highlightChildrenMobile[i].transition = "all 0.4s";
+      highlightChildrenMobile[i].style.borderBottom = "4px solid white";
+      highlightChildrenMobile[i].style.color = "white";
+      highlightChildrenMobile[i].style.cursor = "pointer";
+      
+    } else{
+      highlightChildrenMobile[i].style.transition = "all 0.4s";
+      highlightChildrenMobile[i].style.borderBottom = "4px solid #04f06a";
+      highlightChildrenMobile[i].style.color = "#04f06a";
+      highlightChildrenMobile[i].style.cursor = "default";
+    }
+  }
 }
 
-function showSecond(){
-  var initial = document.getElementById("initialExp");
-  initial.style.display = "none";
-
-  var x = document.getElementById("secondCompany");
-  x.style.display = "block";
-
-  var y = document.getElementById("firstCompany");
-  y.style.display = "none";
-
-  var z = document.getElementById("thirdCompany");
-  z.style.display = "none";
-
-  var currentTab = document.getElementById("tabItem2");
-  currentTab.style.transition = "all 0.4s";
-  currentTab.style.borderLeft = "4px solid #04f06a";
-  currentTab.style.color = "#04f06a";
-  currentTab.style.cursor = "default";
-
-  var otherTab1 = document.getElementById("tabItem1");
-  otherTab1.transition = "all 0.4s";
-  otherTab1.style.borderLeft = "4px solid white";
-  otherTab1.style.color = "white";
-  otherTab1.style.cursor = "pointer";
-
-  var otherTab2 = document.getElementById("tabItem3");
-  otherTab2.transition = "all 0.4s";
-  otherTab2.style.borderLeft = "4px solid white";
-  otherTab2.style.color = "white";
-  otherTab2.style.cursor = "pointer";
-
-  var currentMobileTab = document.getElementById("tabItemSmall2");
-  currentMobileTab.style.transition = "all 0.4s";
-  currentMobileTab.style.borderBottom = "4px solid #04f06a";
-  currentMobileTab.style.color = "#04f06a";
-  currentMobileTab.style.cursor = "default";
-
-  var otherMobileTab1 = document.getElementById("tabItemSmall1");
-  otherMobileTab1.transition = "all 0.4s";
-  otherMobileTab1.style.borderBottom = "4px solid white";
-  otherMobileTab1.style.color = "white";
-  otherMobileTab1.style.cursor = "pointer";
-
-  var otherMobileTab2 = document.getElementById("tabItemSmall3");
-  otherMobileTab2.transition = "all 0.4s";
-  otherMobileTab2.style.borderBottom = "4px solid white";
-  otherMobileTab2.style.color = "white";
-  otherMobileTab2.style.cursor = "pointer";
-}
-
-function showThird(){
-  var initial = document.getElementById("initialExp");
-  initial.style.display = "none";
-
-  var x = document.getElementById("thirdCompany");
-  x.style.display = "block";
-
-  var y = document.getElementById("secondCompany");
-  y.style.display = "none";
-
-  var z = document.getElementById("firstCompany");
-  z.style.display = "none";
-
-  var currentTab = document.getElementById("tabItem3");
-  currentTab.style.transition = "all 0.4s";
-  currentTab.style.borderLeft = "4px solid #04f06a";
-  currentTab.style.color = "#04f06a";
-  currentTab.style.cursor = "default";
-
-  var otherTab1 = document.getElementById("tabItem2");
-  otherTab1.transition = "all 0.4s";
-  otherTab1.style.borderLeft = "4px solid white";
-  otherTab1.style.color = "white";
-  otherTab1.style.cursor = "pointer";
-
-  var otherTab2 = document.getElementById("tabItem1");
-  otherTab2.transition = "all 0.4s";
-  otherTab2.style.borderLeft = "4px solid white";
-  otherTab2.style.color = "white";
-  otherTab2.style.cursor = "pointer";
-
-  var currentMobileTab = document.getElementById("tabItemSmall3");
-  currentMobileTab.style.transition = "all 0.4s";
-  currentMobileTab.style.borderBottom = "4px solid #04f06a";
-  currentMobileTab.style.color = "#04f06a";
-  currentMobileTab.style.cursor = "default";
-
-  var otherMobileTab1 = document.getElementById("tabItemSmall2");
-  otherMobileTab1.transition = "all 0.4s";
-  otherMobileTab1.style.borderBottom = "4px solid white";
-  otherMobileTab1.style.color = "white";
-  otherMobileTab1.style.cursor = "pointer";
-
-  var otherMobileTab2 = document.getElementById("tabItemSmall1");
-  otherMobileTab2.transition = "all 0.4s";
-  otherMobileTab2.style.borderBottom = "4px solid white";
-  otherMobileTab2.style.color = "white";
-  otherMobileTab2.style.cursor = "pointer";
-}
