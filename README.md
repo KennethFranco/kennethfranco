@@ -1,12 +1,12 @@
 ### Hi there 👋
 
-I'm **Ken**, currently a junior majoring in **BS Management Information Systems** at the Ateneo de Manila University.
+I'm **Ken**, currently a senior majoring in **BS Management Information Systems** at the Ateneo de Manila University.
 
 As an aspiring **software engineer**, I've sought out opportunities that I've felt would enable me to grow and learn more about what it really takes to pursue a career in this field.
 
-For one, I'm currently the **Associate Vice President for Systems Documentation** at my home organization, <a href="https://www.facebook.com/Ateneo.MISA/" target="_blank">Ateneo MISA</a>, wherein I handle systems documentation procedures along with leading outsourced development projects for the organization.
+For one, I've taken up multiple leadership postions closely related to software development at my home organization, <a href="https://www.facebook.com/Ateneo.MISA/" target="_blank">Ateneo MISA</a>, with my key experience as the **Associate Vice President for Systems Documentation**, wherein I handled systems documentation procedures along with leading outsourced development projects for the organization, and 
 
-Additionally, I've also taken the leap into the professional world as well, currently employed as a **Development Intern** at <a href="https://medgrocer.com/" target="_blank">MedGrocer</a>, wherein I am currently building and developing systems and websites related to medicine and healthcare.
+Additionally, I've also taken the leap into the professional world as well, previously taking up two internships at two uniquely different Philippines-based startups during my junior year. The first of these was at <a href="https://www.abakadastudios.com/" target="_blank">Abakada Studios</a>, as a **Web Development Intern**, wherein I was exposed to building different educational technologies for the company's clients. On the other hand, I was also employed as a **Development Intern** at <a href="https://medgrocer.com/" target="_blank">MedGrocer</a>, wherein I was given many opportunities in both developing systems and websites from scratch as well as adding features to their already existing applications, all of which were related to medicine and healthcare.
 
 You can get to know me even better through the following:
 - View my <a href="https://kennethfranco.github.io/kennethfranco/" target="_blank">portfolio site</a>
